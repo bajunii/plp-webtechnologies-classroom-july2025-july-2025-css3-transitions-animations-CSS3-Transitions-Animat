@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Dynamic Web Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero-section">
+        <h1 class="hero-title">✨ Interactive Animation Showcase</h1>
+        <p class="hero-subtitle">Bringing web pages to life with CSS & JavaScript</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Part 1: CSS-Only Animations -->
+        <section class="section" id="css-animations">
+            <h2>🎨 Part 1: CSS3 Transitions & Animations</h2>
+            
+            <!-- Hover Effects -->
+            <div class="demo-grid">
+                <button class="btn btn-primary">Hover Me!</button>
+                <button class="btn btn-secondary">Click Effect</button>
+                <div class="animated-card">
+                    <h3>Animated Card</h3>
+                    <p>Hover to see magic happen!</p>
+                </div>
+            </div>
+
+            <!-- Continuous Animations -->
+            <div class="floating-elements">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions -->
+        <section class="section" id="js-functions">
+            <h2>📚 Part 2: JavaScript Functions & Scope</h2>
+            
+            <div class="function-demo">
+                <div class="controls">
+                    <input type="number" id="numberInput" placeholder="Enter a number" value="5">
+                    <button onclick="calculateSquare()">Calculate Square</button>
+                    <button onclick="generateRandomColor()">Random Color</button>
+                    <button onclick="updateCounter()">Update Counter</button>
+                </div>
+                
+                <div class="results">
+                    <div id="result-display">Results will appear here...</div>
+                    <div id="color-display" class="color-box"></div>
+                    <div id="counter-display">Counter: <span id="counter">0</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined CSS + JavaScript -->
+        <section class="section" id="combined-effects">
+            <h2>🎬 Part 3: CSS + JavaScript Magic</h2>
+            
+            <div class="interactive-demo">
+                <!-- Animated Box Controls -->
+                <div class="animation-controls">
+                    <button onclick="animateBox('bounce')">Bounce Animation</button>
+                    <button onclick="animateBox('spin')">Spin Animation</button>
+                    <button onclick="animateBox('pulse')">Pulse Animation</button>
+                    <button onclick="resetAnimations()">Reset</button>
+                </div>
+                
+                <!-- Animated Box -->
+                <div id="animated-box" class="animated-box">
+                    <span>🎯</span>
+                </div>
+
+                <!-- Card Flip Demo -->
+                <div class="card-container">
+                    <div id="flip-card" class="flip-card" onclick="toggleCard()">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Click to Flip!</h3>
+                                <p>🎴</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Amazing!</h3>
+                                <p>🌟 You flipped me!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Demo -->
+                <div class="modal-controls">
+                    <button onclick="showModal()">Show Modal</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideModal()">&times;</span>
+            <h2>🎉 Animated Modal</h2>
+            <p>This modal slides in with CSS animations triggered by JavaScript!</p>
+            <button onclick="hideModal()" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div id="loading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Loading amazing content...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
